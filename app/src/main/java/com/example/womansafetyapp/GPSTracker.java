@@ -33,6 +33,7 @@ public class GPSTracker extends Service implements LocationListener {
     // Flag for GPS status
     boolean canGetLocation = false;
 
+
     Location location; // Location
     double latitude; // Latitude
     double longitude; // Longitude
