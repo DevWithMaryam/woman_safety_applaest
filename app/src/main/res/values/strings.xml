@@ -1,71 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Woman safety app</string>
-    <string name="tool_bar">Woman safety app</string>
-    //LOGIN WITH YOUR ACCOUNT
-    <string name="Signup_As">Signup with your Account</string>
-    <string name="Signup1">Signup as Woman</string>
-    <string name="Signup2">Signup as Guardian</string>
-    <string name="Signup3">Signup as Police</string>
-    <string name="permissions">Need Permissions First</string>
-    //USER LOGIN
-    <string name="ULT1">Woman Login</string>
-    <string name="ULT2">woman name</string>
-    <string name="ULT3">Password</string>
-    <string name="UL4B">Login</string>
-    <string name="ULT5">Create a new Account</string>
-    //USER SIGNUP
-    <string name="UST1">woman Signup</string>
-    <string name="UST2">Name</string>
-    <string name="UST3">Email</string>
-    <string name="UST4">Password</string>
-    <string name="UST5">Guardian Email</string>
-    <string name="UST8">user name</string>
-    <string name="USb6">Signup </string>
-    <string name="UST7">Back to login</string>
-    <string name="UST9">Emergency Phone Number</string>
-    //guardian LOGIN
-    <string name="gl1">Guardian Login</string>
-    <string name="gl2">username</string>
-    <string name="gl3">Password</string>
-    <string name="gl4B">Login</string>
-    <string name="gl5">Create a new Account</string>
-    //police LOGIN
-    <string name="pl1">Police Login</string>
-    <string name="pl2">username</string>
-    <string name="pl3">Password</string>
-    <string name="pl4B">Login</string>
-    <string name="pl5">Create a new Account</string>
-    //guardian signup
-    <string name="gst1">Guardian Signup</string>
-    <string name="gst2">Name</string>
-    <string name="gst3">Email</string>
-    <string name="gst4">Password</string>
-    <string name="gst5">user name</string>
-    <string name="gsb6">Signup </string>
-    <string name="gst7">Back to login</string>
-    //police signup //guardian signup
-    <string name="pst1">police Signup</string>
-    <string name="pst2">Name</string>
-    <string name="pst3">Email</string>
-    <string name="pst4">Password</string>
-    <string name="pst5">user name</string>
-    <string name="psb6">Signup </string>
-    <string name="pst7">Back to login</string>
-    // menu ky string user home page
-    <string name="user_name">User Name</string>
-    <string name="text_1"> Alert 15 and Guardian</string>
-    <string name="text_2"> Panic Alarm</string>
-    <string name="text_3"> Send Location</string>
-    <string name="text_4"> Safety Tips</string>
-    <string name="text_5"> Safety Tips</string>
-    <string name="text_6"> Settings</string>
-    <string name="text_7"> Google Map</string>
-    <string name="NB_1"> Home</string>
-    <string name="NB_2"> Add Contacts</string>
-    <string name="NB_3"> Messages</string>
-    <string name="NB_4"> Edit Profile</string>
-    <string name="textf">forgot password</string>
-    <string name="tips"> Top Five Safety Tips for Women:\n\n Plan Ahead: Before heading out, always have a plan in place. Familiarize yourself with your surroundings, stay aware of who and what is nearby, and inform someone outside your group about your whereabouts.\n\n Share Your Location: Use the emergency features on your smartphone to ping your location to trusted contacts in case of an emergency.\n\n Carry Self-Defense Tools: Choose self-defense tools like pepper spray, a safety whistle, or a mini flashlight that you feel comfortable carrying. These items can be easily accessible by clipping them to your purse or keychain.\n\n Set Boundaries: Trust your instincts and don\'t hesitate to create distance from anyone who makes you feel uncomfortable or unsafe. Your safety is the priority, so prioritize it over politeness.\n\n Empower Yourself: Take a self-defense class to equip yourself both physically and mentally to handle potentially dangerous situations\n\n</string>
-    <string name="channel_name">channel_name</string>
-    <string name="channel_description">channel_description</string>
+    <string name="app_name">SafeHer</string>
+
+    <!-- Welcome / Onboarding -->
+    <string name="welcome_title">Your Safety, One Tap Away</string>
+    <string name="welcome_subtitle">Instantly alert trusted contacts and responders in an emergency.</string>
+    <string name="get_started">Get Started</string>
+
+    <!-- Role Selection -->
+    <string name="select_role_title">Who are you?</string>
+    <string name="role_woman">Woman</string>
+    <string name="role_guardian">Guardian</string>
+    <string name="role_police">Police</string>
+
+    <!-- Auth -->
+    <string name="login">Log In</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="no_account_prompt">Don\'t have an account? Register</string>
+    <string name="have_account_prompt">Already have an account? Log In</string>
+
+    <!-- Woman Home -->
+    <string name="greeting_prefix">Hello,</string>
+    <string name="are_you_safe">Are you safe?</string>
+    <string name="sos_button">SOS</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="contacts">Contacts</string>
+    <string name="location">Location</string>
+    <string name="nearby_help">Nearby Help</string>
+    <string name="safety_tips">Safety Tips</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+
+    <!-- SOS Flow -->
+    <string name="sos_confirm_title">Confirm Emergency</string>
+    <string name="sos_confirm_message">Sending an alert in %1$d…</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_emergency_type">What kind of emergency?</string>
+    <string name="type_police">Police</string>
+    <string name="type_medical">Medical</string>
+    <string name="type_general">General</string>
+
+    <!-- Status -->
+    <string name="status_idle">Idle</string>
+    <string name="status_initiated">Alert Initiated</string>
+    <string name="status_location_acquired">Location Acquired</string>
+    <string name="status_active">Active</string>
+    <string name="status_resolved">Resolved</string>
+
+    <!-- Errors -->
+    <string name="error_login_failed">Login failed. Please check your credentials.</string>
+    <string name="error_invalid_credentials">Invalid email or password.</string>
+    <string name="error_registration_failed">Registration failed. Please try again.</string>
+    <string name="error_database_unavailable">Unable to reach the server right now.</string>
+    <string name="error_location_permission_denied">Location permission is required to send an accurate alert.</string>
+    <string name="error_location_unavailable">Unable to determine your current location.</string>
+    <string name="error_location_disabled">Location services are turned off. Please enable GPS.</string>
+    <string name="error_emergency_creation_failed">Could not create the emergency alert. Please try again.</string>
+    <string name="error_no_internet">No internet connection.</string>
+    <string name="error_maps_unavailable">Google Maps is not available on this device.</string>
+
+    <!-- Guardian / Police -->
+    <string name="active_alerts">Active Alerts</string>
+    <string name="no_active_alerts">No active alerts right now.</string>
+    <string name="open_in_maps">Open in Maps</string>
+    <string name="navigate">Navigate</string>
+    <string name="mark_resolved">Mark Resolved</string>
 </resources>

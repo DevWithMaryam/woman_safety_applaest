@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="dark_blue">#010933</color>
-    <color name="lavender">#8692f7</color>
-    <color name="red">#AF1206</color>
-    <color name="light_gray">#757575</color>
-    <color name="my_primary">#3F51B5</color>
+    <!-- Brand / Primary — calm professional teal-blue -->
+    <color name="primary">#2C5F70</color>
+    <color name="primary_dark">#1E4652</color>
+    <color name="primary_light">#5B8A9A</color>
+    <color name="on_primary">#FFFFFF</color>
 
+    <!-- Secondary / Accent -->
+    <color name="secondary">#6D9DAB</color>
+    <color name="on_secondary">#FFFFFF</color>
+
+    <!-- Emergency / SOS — reserved exclusively for emergency actions -->
+    <color name="sos_red">#D32F2F</color>
+    <color name="sos_red_dark">#B71C1C</color>
+    <color name="sos_red_light">#FFCDD2</color>
+
+    <!-- Status colors -->
+    <color name="status_active">#D32F2F</color>
+    <color name="status_resolved">#2E7D32</color>
+    <color name="status_pending">#F9A825</color>
+    <color name="status_error">#C62828</color>
+
+    <!-- Neutrals -->
+    <color name="background">#F7F9FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#EEF2F3</color>
+    <color name="text_primary">#1B1F20</color>
+    <color name="text_secondary">#5C6B6E</color>
+    <color name="divider">#E0E5E6</color>
+    <color name="disabled">#B0BABB</color>
+
+    <!-- Dark theme neutrals -->
+    <color name="background_dark">#121516</color>
+    <color name="surface_dark">#1C2022</color>
+    <color name="surface_variant_dark">#262B2D</color>
+    <color name="text_primary_dark">#EDEFEF</color>
+    <color name="text_secondary_dark">#A7B0B1</color>
 </resources>
