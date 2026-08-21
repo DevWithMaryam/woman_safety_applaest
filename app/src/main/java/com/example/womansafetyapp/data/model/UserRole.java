@@ -1,4 +1,4 @@
-package com.maryam.womensafetyapp.data.model;
+package com.example.womansafetyapp.data.model;
 
 /**
  * The three supported user roles in the application.

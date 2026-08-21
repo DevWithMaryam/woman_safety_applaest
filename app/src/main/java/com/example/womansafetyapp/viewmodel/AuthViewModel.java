@@ -1,4 +1,4 @@
-package com.maryam.womensafetyapp.viewmodel;
+package com.example.womansafetyapp.viewmodel;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
@@ -6,11 +6,11 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.google.firebase.auth.FirebaseUser;
-import com.maryam.womensafetyapp.data.model.User;
-import com.maryam.womensafetyapp.data.model.UserRole;
-import com.maryam.womensafetyapp.data.repository.AuthRepository;
-import com.maryam.womensafetyapp.data.repository.UserRepository;
-import com.maryam.womensafetyapp.utils.Resource;
+import com.example.womansafetyapp.data.model.User;
+import com.example.womansafetyapp.data.model.UserRole;
+import com.example.womansafetyapp.data.repository.AuthRepository;
+import com.example.womansafetyapp.data.repository.UserRepository;
+import com.example.womansafetyapp.utils.Resource;
 
 /**
  * Backs AuthActivity. Handles both registration (auth + profile-with-role write)

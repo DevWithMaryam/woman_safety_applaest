@@ -1,4 +1,4 @@
-package com.maryam.womensafetyapp.data.model;
+package com.example.womansafetyapp.data.model;
 
 /**
  * Lifecycle of an emergency alert, plus failure states.

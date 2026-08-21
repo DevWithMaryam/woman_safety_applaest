@@ -1,4 +1,4 @@
-package com.maryam.womensafetyapp.utils;
+package com.example.womansafetyapp.utils;
 
 import android.app.Application;
 

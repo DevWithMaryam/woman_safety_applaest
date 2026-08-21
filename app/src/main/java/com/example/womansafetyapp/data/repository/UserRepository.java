@@ -1,4 +1,4 @@
-package com.maryam.womensafetyapp.data.repository;
+package com.example.womansafetyapp.data.repository;
 
 import androidx.annotation.NonNull;
 
@@ -7,8 +7,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.maryam.womensafetyapp.data.model.User;
-import com.maryam.womensafetyapp.utils.Constants;
+import com.example.womansafetyapp.data.model.User;
+import com.example.womansafetyapp.utils.Constants;
 
 /**
  * Reads and writes /users/{userId} in Realtime Database.

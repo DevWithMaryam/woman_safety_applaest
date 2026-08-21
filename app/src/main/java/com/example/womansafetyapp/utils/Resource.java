@@ -1,4 +1,4 @@
-package com.maryam.womensafetyapp.utils;
+package com.example.womansafetyapp.utils;
 
 /**
  * Generic wrapper for UI state exposed by ViewModels via LiveData.
