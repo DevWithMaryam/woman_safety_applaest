@@ -1,10 +1,9 @@
-package com.maryam.womensafetyapp.location;
+package com.example.womansafetyapp.location;
 
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
-import android.os.CancellationSignal;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -13,6 +12,7 @@ import com.google.android.gms.location.CurrentLocationRequest;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.Priority;
+import com.google.android.gms.tasks.CancellationTokenSource;
 
 /**
  * Wraps FusedLocationProviderClient to fetch a single fresh current location
@@ -63,7 +63,8 @@ public class SafetyLocationManager {
                 .build();
 
         try {
-            fusedClient.getCurrentLocation(request, new CancellationSignal())
+            CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+            fusedClient.getCurrentLocation(request, cancellationTokenSource.getToken())
                     .addOnSuccessListener(location -> {
                         if (location != null) {
                             callback.onLocationResult(location.getLatitude(), location.getLongitude());

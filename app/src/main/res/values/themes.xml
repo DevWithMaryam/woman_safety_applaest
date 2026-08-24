@@ -11,6 +11,11 @@
         <item name="android:windowBackground">@color/background</item>
         <item name="android:textColorPrimary">@color/text_primary</item>
         <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="materialButtonStyle">@style/Widget.WomenSafetyApp.DefaultButton</item>
+    </style>
+
+    <style name="Widget.WomenSafetyApp.DefaultButton" parent="Widget.Material3.Button">
+        <item name="cornerRadius">@dimen/corner_radius_md</item>
     </style>
 
     <style name="Theme.WomenSafetyApp.Splash" parent="Theme.SplashScreen">

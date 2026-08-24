@@ -1,4 +1,4 @@
-package com.maryam.womensafetyapp.data.repository;
+package com.example.womansafetyapp.data.repository;
 
 import androidx.annotation.NonNull;
 

@@ -25,6 +25,7 @@
     <string name="have_account_prompt">Already have an account? Log In</string>
 
     <!-- Woman Home -->
+    <string name="nav_home">Home</string>
     <string name="greeting_prefix">Hello,</string>
     <string name="are_you_safe">Are you safe?</string>
     <string name="sos_button">SOS</string>

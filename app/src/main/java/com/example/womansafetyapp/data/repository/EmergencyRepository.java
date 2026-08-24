@@ -1,4 +1,4 @@
-package com.maryam.womensafetyapp.data.repository;
+package com.example.womansafetyapp.data.repository;
 
 import androidx.annotation.NonNull;
 
@@ -7,9 +7,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.maryam.womensafetyapp.data.model.EmergencyAlert;
-import com.maryam.womensafetyapp.data.model.EmergencyStatus;
-import com.maryam.womensafetyapp.utils.Constants;
+import com.example.womansafetyapp.data.model.EmergencyAlert;
+import com.example.womansafetyapp.data.model.EmergencyStatus;
+import com.example.womansafetyapp.utils.Constants;
 
 import java.util.ArrayList;
 import java.util.List;

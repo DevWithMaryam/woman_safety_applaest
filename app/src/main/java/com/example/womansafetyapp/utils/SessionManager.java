@@ -1,9 +1,9 @@
-package com.maryam.womensafetyapp.utils;
+package com.example.womansafetyapp.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.maryam.womensafetyapp.data.model.UserRole;
+import com.example.womansafetyapp.data.model.UserRole;
 
 /**
  * Lightweight local cache of the signed-in user's role, so app restart can

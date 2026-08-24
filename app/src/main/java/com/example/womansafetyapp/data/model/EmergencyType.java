@@ -1,4 +1,4 @@
-package com.maryam.womensafetyapp.data.model;
+package com.example.womansafetyapp.data.model;
 
 /**
  * Type of emergency selected during the SOS flow.

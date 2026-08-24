@@ -1,4 +1,4 @@
-package com.maryam.womensafetyapp.utils;
+package com.example.womansafetyapp.utils;
 
 /**
  * Central place for Realtime Database node names and shared constants,

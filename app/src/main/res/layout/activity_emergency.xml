@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/spacing_xl"
+    android:background="@color/background">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageStatusIcon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_sos"
+        android:background="@color/sos_red"
+        android:padding="16dp"
+        android:contentDescription="@string/sos_button" />
+
+    <TextView
+        android:id="@+id/textStatusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_lg"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_size_headline"
+        android:textStyle="bold"
+        android:text="@string/status_initiated" />
+
+    <TextView
+        android:id="@+id/textStatusMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:gravity="center"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_size_body" />
+
+    <ProgressBar
+        android:id="@+id/progressEmergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_lg" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonViewOnMap"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="@dimen/spacing_xl"
+        android:text="@string/open_in_maps"
+        android:visibility="gone"
+        app:cornerRadius="@dimen/corner_radius_md" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonResolve"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:text="@string/mark_resolved"
+        android:visibility="gone"
+        app:cornerRadius="@dimen/corner_radius_md" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonRetry"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:text="Try Again"
+        android:visibility="gone"
+        app:cornerRadius="@dimen/corner_radius_md" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonClose"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:text="@string/cancel" />
+
+</LinearLayout>

@@ -31,6 +31,11 @@ playServicesMaps = "17.0.0"
 playServicesMapsVersion = "18.2.0"
 runner = "1.0.1"
 googleGmsGoogleServices = "4.4.2"
+credentials = "1.6.0"
+credentialsPlayServicesAuth = "1.6.0"
+googleid = "1.2.0"
+firebaseAnalytics = "23.2.0"
+firebaseFirestore = "26.6.0"
 
 [libraries]
 activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
@@ -64,6 +69,11 @@ play-services-maps = { module = "com.google.android.gms:play-services-maps", ver
 play-services-maps-v1801 = { module = "com.google.android.gms:play-services-maps", version.ref = "googlePlayServicesMaps" }
 play-services-maps-v1820 = { module = "com.google.android.gms:play-services-maps", version.ref = "googlePlayServicesMapsVersion" }
 runner = { module = "com.android.support.test:runner", version.ref = "runner" }
+credentials = { group = "androidx.credentials", name = "credentials", version.ref = "credentials" }
+credentials-play-services-auth = { group = "androidx.credentials", name = "credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
+googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics", version.ref = "firebaseAnalytics" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

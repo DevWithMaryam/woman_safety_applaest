@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="safety_tips_titles">
+        <item>Share your live location</item>
+        <item>Trust your instincts</item>
+        <item>Keep your phone charged</item>
+        <item>Save emergency contacts</item>
+        <item>Avoid isolated routes at night</item>
+        <item>Keep a verbal code word with family</item>
+    </string-array>
+
+    <string-array name="safety_tips_descriptions">
+        <item>Let a trusted contact know where you are, especially on unfamiliar routes.</item>
+        <item>If a situation feels wrong, leave immediately rather than second-guessing yourself.</item>
+        <item>A charged phone means you can always reach the SOS button and your contacts.</item>
+        <item>Add at least 2–3 trusted people in the Contacts section so alerts reach someone fast.</item>
+        <item>Prefer well-lit, populated streets when travelling alone after dark.</item>
+        <item>Agree on a simple code word with family that signals you need help without alarming others nearby.</item>
+    </string-array>
+</resources>
