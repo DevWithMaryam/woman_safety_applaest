@@ -34,7 +34,6 @@ fast, and without requiring a paid Maps SDK or complex backend.
 - Emergency contacts management (add, call, remove)
 - Nearby police station / hospital search via **Google Maps intents** (no API key required)
 - Role-based dashboards for Woman, Guardian, and Police
-- Light & dark theme support
 - Full loading / success / error states on every network-dependent action
 
 ## User Roles
@@ -60,18 +59,6 @@ Every step degrades gracefully — permission denial, disabled GPS, no internet,
 failed database write all show a clear, specific message instead of a blank screen.
 
 ## Screenshots
-
-> Add screenshots to a `screenshots/` folder in the repo root and reference them below.
-> Recommended shots for a strong portfolio impression:
-
-| Screen | Why it's worth showing |
-|---|---|
-| Welcome / Role Selection | First impression — shows visual identity and the three-role concept |
-| Woman Home (SOS prominent) | The app's core idea in one glance |
-| SOS confirmation + emergency type bottom sheet | Shows interaction depth, not just a static screen |
-| Emergency status screen (Active state) | Demonstrates the live, functional emergency flow |
-| Guardian or Police alert dashboard | Shows the multi-role, real-time nature of the app |
-| Nearby Help / location screen with Maps | Shows the Google Maps integration |
 
 ```markdown
 <p float="left">
@@ -191,12 +178,7 @@ device's own Phone app via an intent.
 - ✅ Logout → session cleared → app restart returns to Welcome, not the dashboard
 - ✅ App restart while logged in → returns directly to the correct role dashboard
 
-## Future Improvements
 
-- Push notifications (FCM) so guardians/police are alerted even when the app is backgrounded
-- Guardian-to-woman linking (currently guardians see the full alert feed rather than a private link list)
-- Offline queuing of an SOS alert if created without connectivity
-- Multi-language support
 
 ## Project Evolution
 
