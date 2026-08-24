@@ -49,6 +49,7 @@ Every step degrades gracefully — permission denial, disabled GPS, no internet,
 
 ## Screenshots
 
+*(Click on any image to view it in full size)*
 
 <div align="center">
   <table>
@@ -104,3 +105,80 @@ ViewModel (LiveData<Resource<T>>)
 Repository (Firebase / Location APIs)
         ↓
 Firebase Realtime Database / FusedLocationProviderClient / Google Maps Intents
+Activities and Fragments never talk to Firebase directly — all data operations are routed through a Repository, and all UI state (loading/success/error) flows through a Resource<T> wrapper exposed by the ViewModel.
+
+Project Structure
+text
+com.example.womansafetyapp
+├── data/
+│   ├── model/          User, EmergencyContact, EmergencyAlert, UserRole, EmergencyType, EmergencyStatus
+│   └── repository/      AuthRepository, UserRepository, ContactRepository, EmergencyRepository
+├── location/             SafetyLocationManager (FusedLocationProviderClient wrapper)
+├── ui/
+│   ├── common/           Splash, Welcome, RoleSelection, Emergency, Location, shared AlertAdapter
+│   ├── auth/             AuthActivity (shared login/register flow)
+│   ├── woman/             WomanMainActivity + Home/Location/SafetyTips/Profile fragments
+│   ├── guardian/          GuardianMainActivity + Home/Profile fragments
+│   └── police/            PoliceMainActivity + Home/Profile fragments
+├── viewmodel/             AuthViewModel, WomanViewModel, EmergencyViewModel, LocationViewModel,
+│                          GuardianViewModel, PoliceViewModel, ProfileViewModel
+└── utils/                 Constants, Resource, SessionManager, MapsIntentHelper
+Firebase Usage
+Only Authentication and Realtime Database are used — no Firestore, Storage, or Cloud Functions, keeping the project entirely on Firebase's free Spark plan.
+
+text
+users/{userId}
+  ├── name, email, phone, role
+
+emergencyContacts/{womanId}/{contactId}
+  ├── name, phone, relationship
+
+emergencyAlerts/{alertId}
+  ├── womanId, womanName, type, latitude, longitude, timestamp, status
+Realtime Database security rules restrict all reads/writes to authenticated users, and a woman's own alerts/contacts can only be written by her own account.
+
+Location & Maps Approach
+Location is fetched on demand via FusedLocationProviderClient.getCurrentLocation() — there's no continuous background tracking, keeping the app's permission footprint and battery impact minimal. Google Maps is opened through plain geo: and google.navigation: intents, so the project needs no Maps SDK dependency and no billing-enabled API key for its core functionality.
+
+Setup Instructions
+Clone the repository and open it in Android Studio.
+
+Create a free Firebase project.
+
+Add an Android app with package name com.example.womansafetyapp, download the generated google-services.json, and place it in the app/ folder.
+
+In the Firebase Console, enable:
+
+Authentication → Sign-in method → Email/Password
+
+Realtime Database (start in locked mode), then paste the rules from database.rules.json into the Rules tab and publish.
+
+Sync Gradle and run.
+
+Permissions
+Permission	Reason
+ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION	Required to attach an accurate location to an SOS alert
+INTERNET / ACCESS_NETWORK_STATE	Required for Firebase Authentication and Realtime Database
+No CALL_PHONE, SEND_SMS, or notification permissions are requested, since the app doesn't place calls or send SMS directly — calling a contact hands off to the device's own Phone app via an intent.
+
+Testing Scenarios
+✅ Woman registers → selects Woman role → SOS → Police type → alert created → visible to both Guardian and Police
+
+✅ Woman → SOS → Medical type → alert visible to Guardian only, not to Police
+
+✅ Invalid login / invalid registration → clear inline error, no crash
+
+✅ Location permission denied → specific error message, retry available
+
+✅ GPS disabled → specific error message
+
+✅ No internet during alert creation → error shown, no silent failure
+
+✅ Logout → session cleared → app restart returns to Welcome, not the dashboard
+
+✅ App restart while logged in → returns directly to the correct role dashboard
+
+Project Evolution
+This project began as a university final-year project and was later redesigned and rebuilt from the ground up as a portfolio-oriented Android application — with a new architecture (MVVM + Repository), a new UI system, and a new visual identity, while keeping the same core mission: making it faster and easier for women to get help.
+
+Built by Maryam Akram
