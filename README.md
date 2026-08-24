@@ -49,15 +49,38 @@ Every step degrades gracefully — permission denial, disabled GPS, no internet,
 
 ## Screenshots
 
-*(Ensure these images are present in your `screenshots` folder. The names below match your project structure)*
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="screenshots/welcome.png" width="200" alt="Welcome Screen" />
-  <img src="screenshots/woman_home.png" width="200" alt="Woman Home" />
-  <img src="screenshots/sos_flow.png" width="200" alt="SOS Flow" />
-  <img src="screenshots/emergency_active.png" width="200" alt="Emergency Active" />
-  <img src="screenshots/guardian_dashboard.png" width="200" alt="Guardian Dashboard" />
-  <img src="screenshots/nearby_help.png" width="200" alt="Nearby Help" />
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="screenshots/welcome.png" width="200" alt="Welcome Screen" /><br />
+        <sub><b>Welcome Screen</b></sub>
+      </td>
+      <td align="center">
+        <img src="screenshots/woman_home.png" width="200" alt="Woman Home" /><br />
+        <sub><b>Woman Home</b></sub>
+      </td>
+      <td align="center">
+        <img src="screenshots/sos_flow.png" width="200" alt="SOS Flow" /><br />
+        <sub><b>SOS Flow</b></sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="screenshots/emergency_active.png" width="200" alt="Emergency Active" /><br />
+        <sub><b>Emergency Active</b></sub>
+      </td>
+      <td align="center">
+        <img src="screenshots/guardian_dashboard.png" width="200" alt="Guardian Dashboard" /><br />
+        <sub><b>Guardian Dashboard</b></sub>
+      </td>
+      <td align="center">
+        <img src="screenshots/nearby_help.png" width="200" alt="Nearby Help" /><br />
+        <sub><b>Nearby Help</b></sub>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ## Tech Stack
