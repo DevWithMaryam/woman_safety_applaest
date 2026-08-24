@@ -1,14 +1,14 @@
 {
   "project_info": {
-    "project_number": "235037666415",
-    "firebase_url": "https://woman-saftey-app-c9554-default-rtdb.firebaseio.com",
-    "project_id": "woman-saftey-app-c9554",
-    "storage_bucket": "woman-saftey-app-c9554.firebasestorage.app"
+    "project_number": "787254309245",
+    "firebase_url": "https://ambient-shelter-410821-default-rtdb.firebaseio.com",
+    "project_id": "ambient-shelter-410821",
+    "storage_bucket": "ambient-shelter-410821.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:235037666415:android:c668c556764ea8d69a719a",
+        "mobilesdk_app_id": "1:787254309245:android:a1343013b77f93a3f4dc14",
         "android_client_info": {
           "package_name": "com.example.womansafetyapp"
         }
@@ -16,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCLWh1I9lHekwCHKHRM0EVRprBQhejOs_0"
+          "current_key": "AIzaSyBxXwX8IJf0W8GY2nBDMWyvlm8dGZvv7w0"
         }
       ],
       "services": {

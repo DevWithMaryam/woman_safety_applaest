@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.example.womansafetyapp" />
-                  <option name="mobileSdkAppId" value="1:235037666415:android:c668c556764ea8d69a719a" />
-                  <option name="projectId" value="woman-saftey-app-c9554" />
-                  <option name="projectNumber" value="235037666415" />
+                  <option name="mobileSdkAppId" value="1:787254309245:android:a1343013b77f93a3f4dc14" />
+                  <option name="projectId" value="ambient-shelter-410821" />
+                  <option name="projectNumber" value="787254309245" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

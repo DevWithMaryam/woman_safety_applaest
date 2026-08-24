@@ -20,6 +20,8 @@ public class RoleSelectionActivity extends AppCompatActivity {
         binding = ActivityRoleSelectionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.buttonBack.setOnClickListener(v -> finish());
+
         binding.cardWoman.setOnClickListener(v -> openAuth(UserRole.WOMAN));
         binding.cardGuardian.setOnClickListener(v -> openAuth(UserRole.GUARDIAN));
         binding.cardPolice.setOnClickListener(v -> openAuth(UserRole.POLICE));
